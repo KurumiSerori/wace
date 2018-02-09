@@ -9,7 +9,7 @@ chrome extension for webui-aria2, would open a new tab showing webui-aria2
 
 or you can
 
-1. Download wace.crx from the [release page](https://github.com/KurumiSerori/wace/releases) and drag it into chrome extension page.
+1. Download wace.crx from the [release page](/releases) and drag it into chrome extension page.
 
 ### TODO
 
