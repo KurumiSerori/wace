@@ -14,4 +14,10 @@ or you can
 ### TODO
 
 maybe would move into extension web store if needed.
+
 maybe context menu function?
+
+### License
+
+Refer to the LICENSE file (MIT License). If the more liberal license is needed then add it as an issue.
+
