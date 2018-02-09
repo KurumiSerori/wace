@@ -3,9 +3,11 @@
 
 	"name": "wace",
 	"description": "chrome extension for webui-aria2, would open a new tab showing webui-aria2",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"icons": {
-		"32": "favicon.ico"
+		"32": "favicon32.png",
+		"64": "favicon64.png",
+		"128": "favicon128.png"
 	},
 
 	"permissions": [
@@ -16,7 +18,7 @@
 	],
 
 	"browser_action": {
-		"default_icon": "favicon.ico"
+		"default_icon": "favicon32.png"
 	},
 	"options_page": "options.html",
 	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
