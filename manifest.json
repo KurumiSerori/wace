@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+
+	"name": "wace",
+	"description": "chrome extension for webui-aria2, would open a new tab showing webui-aria2",
+	"version": "0.0.1",
+	"icons": {
+		"32": "favicon.ico"
+	},
+
+	"permissions": [
+		"tabs",
+		"notifications",
+		"activeTab",
+		"<all_urls>"
+	],
+
+	"browser_action": {
+		"default_icon": "favicon.ico"
+	},
+	"options_page": "options.html",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	}
+}
