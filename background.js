@@ -1,6 +1,19 @@
 chrome.browserAction.onClicked.addListener(function() {
 	var indexUrl = chrome.extension.getURL('webui-aria2/index.html');
-	chrome.tabs.create({ url: indexUrl });
+	chrome.tabs.getSelected(null, function(tab) { 
+		var tabUrl = tab.url;
+		// alert(tabUrl);
+		// alert(tab.status);
+		if(tabUrl == "chrome://newtab/") {	// current tab is blank, open in current tab
+			chrome.tabs.update(tab.id, { url: indexUrl });
+		}
+		else if(tabUrl == indexUrl) {	// current tab is already in extension page, just refresh
+			chrome.tabs.reload(new Number(tab.id));
+		}
+		else {	// create a new tab for extension to run
+			chrome.tabs.create({ url: indexUrl });
+		}
+	});
 });
 
 
